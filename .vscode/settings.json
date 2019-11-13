@@ -2,5 +2,5 @@
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
+    "python.pythonPath": "/Users/makeschoolloaner/dev/BEW1.2/projects/makewiki_v2/env/bin/python3"
 }
