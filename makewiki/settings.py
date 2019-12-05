@@ -25,7 +25,7 @@ SECRET_KEY = '1yct-t!2bnkgc7j59z+9cdd2k)@y+ftqor$!aya()3if^cnlo-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'makewiki-amg.herokuapp.com']
 
 
 # Application definition
@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
+
     'wiki',
-    'accounts'
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +149,5 @@ try:
     from makewiki.local_settings import *
 except ImportError:
     pass
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
