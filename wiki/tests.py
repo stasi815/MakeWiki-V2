@@ -70,8 +70,6 @@ class PageDetailViewTests(TestCase):
         self.assertEqual(response.title, 'My Test Page')
 
 
-
-
 class PageCreateViewTests(TestCase):
     """ Tests the new-page creation process."""
     def test_get_new_page_form(self):
